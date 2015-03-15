@@ -23,7 +23,7 @@ class File extends FilesystemBase {
     protected $newContentReplace = false;
 
     const MODE_REPLACE_CONTENT = "w+";
-    const MODE_ADD_CONTENT = "a+";
+    const MODE_ADD_CONTENT = "a";
 
     /**
      * Create object.
@@ -42,16 +42,16 @@ class File extends FilesystemBase {
      */
     public function save() {
         if ($this->isset == false){
-            // if not isset, create new file
+            // If the file does not exist check his way, create a folder that does not exist
             $folder = new Folder(dirname($this->path));
             $folder->save();
-
-            $mode = self::MODE_ADD_CONTENT;
-            if ($this->newContentReplace) {
-                $mode = self::MODE_REPLACE_CONTENT;
-            }
-            $this->write($mode);
         }
+
+        $mode = self::MODE_ADD_CONTENT;
+        if ($this->newContentReplace) {
+            $mode = self::MODE_REPLACE_CONTENT;
+        }
+        $this->write($mode);
         // and set configs to file
         $this->update();
     }
