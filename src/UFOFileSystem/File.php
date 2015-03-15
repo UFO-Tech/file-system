@@ -23,7 +23,7 @@ class File extends FilesystemBase {
     protected $newContentReplace = false;
 
     const MODE_REPLACE_CONTENT = "w+";
-    const MODE_ADD_CONTENT = "a";
+    const MODE_ADD_CONTENT = "a+";
 
     /**
      * Create object.
