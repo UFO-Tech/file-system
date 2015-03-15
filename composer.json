@@ -1,17 +1,23 @@
 {
-  "name": "ufo-cms/file-system",
-  "type": "library",
-  "description": "A set of classes for working with files",
-  "license": "GPL-2.0+",
-  "authors": [
-    {
-      "name": "Alex Maistrenko",
-      "email": "ashterix69@gmail.com",
-      "role": "Developer"
+    "name": "ufo-cms/file-system",
+    "type": "library",
+    "description": "A set of classes for working with files",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Alex Maistrenko",
+            "email": "ashterix69@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-0": {
+            "UFOFilesystem": "src/"
+        }
     }
-  ],
-  "minimum-stability": "dev",
-  "require": {
-    "php": ">=5.4"
-  }
+
 }
