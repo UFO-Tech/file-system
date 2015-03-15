@@ -1,7 +1,7 @@
 {
     "name": "ufo-cms/file-system",
     "type": "library",
-    "description": "A set of classes for working with files",
+    "description": "A set of classes for working with files.",
     "license": "GPL-2.0+",
     "authors": [
         {
