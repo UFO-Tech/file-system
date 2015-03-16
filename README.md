@@ -83,7 +83,7 @@ $myFile->remove();
 License
 -------
 
-This library is available under the MIT license.
+This library is available under the GPL-2.0+ license.
 
 [Composer]: http://getcomposer.org/
 
