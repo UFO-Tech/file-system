@@ -5,12 +5,11 @@
     "license": "GPL-2.0+",
     "authors": [
         {
-            "name": "Alex Maistrenko",
+            "name": "Alex Maystrenko",
             "email": "ashterix69@gmail.com",
             "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4"
     },
