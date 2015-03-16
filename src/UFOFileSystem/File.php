@@ -105,11 +105,11 @@ class File extends FilesystemBase {
     /**
      * @description Set content to file
      *
-     * @param $newContent
+     * @param $content
      * @param bool $replace Flag indicating whether you want to replace or append content
      * @return $this
      */
-    public function setNewContent($newContent, $replace = false)
+    public function setContent($content, $replace = false)
     {
         $this->newContent = $newContent;
         $this->newContentReplace = $replace;
