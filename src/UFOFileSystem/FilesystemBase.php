@@ -42,9 +42,14 @@ class FilesystemBase implements FilesystemBaseInterface {
      *
      * @param $path
      * @param $type file or folder
+     * @throws \Exception
      */
     public function __construct($path, $type)
     {
+        if (empty($path)) {
+            throw new \Exception("The path can not be empty");
+        }
+
         $this->path = $path;
         $this->checkAvailability($type);
     }
