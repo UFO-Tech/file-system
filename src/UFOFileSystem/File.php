@@ -111,7 +111,7 @@ class File extends FilesystemBase {
      */
     public function setContent($content, $replace = false)
     {
-        $this->newContent = $newContent;
+        $this->newContent = $content;
         $this->newContentReplace = $replace;
         return $this;
     }
