@@ -14,9 +14,9 @@
  * Time: 13:52
  */
 
-namespace UFOFilesystem;
+namespace UFOFileSystem;
 
-class Folder extends FilesystemBase {
+class Folder extends FileSystemBase {
 
     /**
      * Settings

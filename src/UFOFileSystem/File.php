@@ -14,10 +14,10 @@
  * Time: 13:58
  */
 
-namespace UFOFilesystem;
+namespace UFOFileSystem;
 
 
-class File extends FilesystemBase {
+class File extends FileSystemBase {
 
     protected $newContent = '';
     protected $newContentReplace = false;

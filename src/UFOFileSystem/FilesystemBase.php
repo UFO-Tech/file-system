@@ -3,10 +3,10 @@
  * file-system 
  * @version: 1.0.0
  *
- * @file: FilesystemBase.php
+ * @file: FileSystemBase.php
  * @author Ashterix <ashterix69@gmail.com>
  *  
- * Class - FilesystemBase
+ * Class - FileSystemBase
  * @description 
  *
  * Created by JetBrains PhpStorm.
@@ -14,12 +14,12 @@
  * Time: 21:59
  */
 
-namespace UFOFilesystem;
+namespace UFOFileSystem;
 
 
-use UFOFilesystem\Interfaces\FilesystemBaseInterface;
+use UFOFileSystem\Interfaces\FileSystemBaseInterface;
 
-class FilesystemBase implements FilesystemBaseInterface {
+class FileSystemBase implements FileSystemBaseInterface {
 
     protected $path = '';
     protected $isset = false;

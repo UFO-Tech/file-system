@@ -14,10 +14,10 @@
  * Time: 21:50
  */
 
-namespace UFOFilesystem\Interfaces;
+namespace UFOFileSystem\Interfaces;
 
 
-interface FilesystemBaseInterface {
+interface FileSystemBaseInterface {
 
     const TYPE_FILE = 1;
     const TYPE_FOLDER = 2;
