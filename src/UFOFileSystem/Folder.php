@@ -1,13 +1,13 @@
 <?php
 /**
- * file-system 
+ * file-system
  * @version: 1.0.0
  *
  * @file: Folder.php
  * @author Ashterix <ashterix69@gmail.com>
- *  
+ *
  * Class - Folder
- * @description 
+ * @description
  *
  * Created by JetBrains PhpStorm.
  * Date: 14.03.2015
@@ -16,7 +16,8 @@
 
 namespace UFOFileSystem;
 
-class Folder extends FileSystemBase {
+class Folder extends FileSystemBase
+{
 
     /**
      * Settings
@@ -48,8 +49,9 @@ class Folder extends FileSystemBase {
     /**
      * @description Apply settings
      */
-    public function save() {
-        if ($this->isset == false){
+    public function save()
+    {
+        if ($this->isset == false) {
             // if not isset, create new folder
             $pathArray = explode('/', $this->path);
             $pathForCreate = [];
@@ -71,7 +73,7 @@ class Folder extends FileSystemBase {
      */
     private function create($folderName)
     {
-        if (!empty($folderName) && !file_exists($folderName)){
+        if (!empty($folderName) && !file_exists($folderName)) {
             $chmod = (!empty($this->configChmod)) ? $this->configChmod : self::CHMOD;
             mkdir($folderName, $chmod);
         }
@@ -88,7 +90,7 @@ class Folder extends FileSystemBase {
 
         if ($this->configAccessDeny) {
             $indexFile = new File($this->path . "/index.html");
-            $indexFile->setNewContent("Access denied")
+            $indexFile->setContent("Access denied")
                 ->save();
         }
 
@@ -124,7 +126,8 @@ class Folder extends FileSystemBase {
      * @param null | string $path
      * @throws \Exception
      */
-    private function removeBase($force = false, $path = null) {
+    private function removeBase($force = false, $path = null)
+    {
         if (empty($path)) {
             $path = $this->path;
         }
