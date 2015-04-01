@@ -1,13 +1,13 @@
 <?php
 /**
- * file-system 
+ * file-system
  * @version: 1.0.0
  *
  * @file: BaseInterface.php
  * @author Ashterix <ashterix69@gmail.com>
- *  
+ *
  * Interface - BaseInterface
- * @description 
+ * @description
  *
  * Created by JetBrains PhpStorm.
  * Date: 15.03.2015
@@ -17,7 +17,8 @@
 namespace UFOFileSystem\Interfaces;
 
 
-interface FileSystemBaseInterface {
+interface FileSystemBaseInterface
+{
 
     const TYPE_FILE = 1;
     const TYPE_FOLDER = 2;

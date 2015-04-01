@@ -1,13 +1,13 @@
 <?php
 /**
- * file-system 
+ * file-system
  * @version: 1.0.0
  *
  * @file: FileSystemBase.php
  * @author Ashterix <ashterix69@gmail.com>
- *  
+ *
  * Class - FileSystemBase
- * @description 
+ * @description
  *
  * Created by JetBrains PhpStorm.
  * Date: 15.03.2015
@@ -19,7 +19,8 @@ namespace UFOFileSystem;
 
 use UFOFileSystem\Interfaces\FileSystemBaseInterface;
 
-class FileSystemBase implements FileSystemBaseInterface {
+class FileSystemBase implements FileSystemBaseInterface
+{
 
     protected $path = '';
     protected $isset = false;
@@ -60,11 +61,11 @@ class FileSystemBase implements FileSystemBaseInterface {
     protected function checkAvailability($type)
     {
         if ($type == self::TYPE_FOLDER) {
-            if (is_dir($this->path)){
+            if (is_dir($this->path)) {
                 $this->isset = true;
             }
         } elseif ($type == self::TYPE_FILE) {
-            if (is_file($this->path)){
+            if (is_file($this->path)) {
                 $this->isset = true;
             }
         }
